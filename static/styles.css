@@ -1,0 +1,61 @@
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style the h1 element within the header */
+header h1 {
+    font-size: 40px;
+}
+
+/* Center the video container */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust the height as needed */
+}
+
+/* Style the video container */
+.video-container {
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the video element within the container */
+.video-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ... (previous CSS code) */
+
+/* Style the "Developed by" text */
+.developed-by {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    background-color: #333;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+

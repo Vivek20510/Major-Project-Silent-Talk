@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hand Gesture Recognition</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Silent Talk</h1>
+    </header>
+    <main>
+        <div class="video-container">
+            <p class="developed-by">Developed by - Group-10</p>
+            <img src="{{ url_for('video_feed') }}" alt="Video Stream">
+        </div>
+    </main>
+</body>
+</html>
