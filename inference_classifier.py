@@ -14,7 +14,7 @@ mp_drawing_styles = mp.solutions.drawing_styles
 
 hands = mp_hands.Hands(static_image_mode=False, min_detection_confidence=0.3, min_tracking_confidence=0.3, max_num_hands=2)
 
-labels_dict = {0: 'Hello', 1: 'I Love U', 2: 'Yes'}
+labels_dict = {0: 'Hello', 1: 'Yes', 2: 'No', 3: 'Thank You', 4:'You', 5:'Me', 6:'Toilet', 7:'Play', 8:'Water', 9:'I Love U' }
 
 while True:
     
@@ -33,9 +33,9 @@ while True:
             y_ = []
 
             mp_drawing.draw_landmarks(
-                frame,  # image to draw
-                hand_landmarks,  # model output
-                mp_hands.HAND_CONNECTIONS,  # hand connections
+                frame,  
+                hand_landmarks,  
+                mp_hands.HAND_CONNECTIONS, 
                 mp_drawing_styles.get_default_hand_landmarks_style(),
                 mp_drawing_styles.get_default_hand_connections_style())
 
@@ -64,7 +64,6 @@ while True:
 
     cv2.imshow('frame', frame)
 
-    # Press 'q' to exit the loop
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
